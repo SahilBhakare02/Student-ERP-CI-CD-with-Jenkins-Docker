@@ -1,5 +1,3 @@
-# Student-ERP-CI-CD-with-Jenkins-Docker
-
 # Student ERP — CI/CD with Jenkins & Docker
 
 A CI/CD pipeline setup for deploying a **Student ERP** application (Spring Boot backend + frontend) on a single EC2 instance, using **Jenkins** for build/deploy automation, **Docker** for containerization, and **AWS RDS (MariaDB)** as the database.
@@ -229,6 +227,7 @@ Create a Jenkins pipeline job that:
 
 Example pipeline:
 
+```groovy
 pipeline {
     agent any
 
@@ -290,7 +289,9 @@ pipeline {
         }
     }
 }
-```> When referencing the `dockerhub-cred` credential, Jenkins automatically exposes `_USR` and `_PSW` suffixed variables (e.g. `DOCKERHUB_CRED_USR`, `DOCKERHUB_CRED_PSW`) — make sure these are used consistently and never printed to logs.
+```
+
+> When referencing the `dockerhub-cred` credential, Jenkins automatically exposes `_USR` and `_PSW` suffixed variables (e.g. `DOCKERHUB_CRED_USR`, `DOCKERHUB_CRED_PSW`) — make sure these are used consistently and never printed to logs.
 
 ---
 
