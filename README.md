@@ -45,7 +45,7 @@ Launch one EC2 instance:
 
 ---
 
-## 2. Install Dependencies on the Server
+## 2. Install Dependencies on the Server (Refer official Documentation for JAVA (21) installation and Jenkins installation)
 
 ```bash
 apt update -y
